@@ -15,8 +15,8 @@ async function dbInsert(table, data) {
   return r.json();
 }
 
-const TIPOS_EQUIPO = ["Excavadora", "Grúa", "Bulldozer", "Cargador", "Camión", "Generador"];
-const TIPOS_TRANSPORTE = ["Camión plataforma", "Grúa de remolque", "Camión articulado", "Camioneta 4x4", "Otro"];
+const TIPOS_EQUIPO = ["Excavadora", "Grúa", "Camión", "Generador", "Herramientas Manuales", "Herramientas Eléctricas"];
+const TIPOS_TRANSPORTE = ["Camión plataforma", "Grúa de remolque", "Camión articulado", "Camioneta 4x4"];
 
 const COLOR_ESTADO = { disponible: "#22c55e", desplegado: "#f97316", no_disponible: "#6b7280" };
 const COLOR_URGENCIA = { 1: "#fbbf24", 2: "#f97316", 3: "#ef4444" };
