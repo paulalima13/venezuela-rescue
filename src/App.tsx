@@ -9,13 +9,13 @@ const HEADERS = {
   "Content-Type": "application/json",
 };
 
-async function dbGet(table) {
+async function dbGet(table: string) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${table}?select=*`, {
     headers: HEADERS,
   });
   return r.json();
 }
-async function dbInsert(table, data) {
+async function dbInsert(table: string, data: object) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
     method: "POST",
     headers: { ...HEADERS, Prefer: "return=representation" },
